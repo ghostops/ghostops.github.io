@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 
   {% include head.html %}
 
-  <body>
+  <body class="{{ page.bodyClass }}">
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+    {{ content }}
 
-    {% include footer.html %}
+    {% include social.html %}
+
+    {% include scripts.html %}
 
   </body>
 

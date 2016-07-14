@@ -1,33 +1,37 @@
 ---
 layout: default
----
+title: Ludvig Larsendahl - Webbkonsult
+description: Jag är en 19 år gammal nybliven student. Webben har varit min hobby och en stor del av mitt liv sedan högstadiet, jag har jobbat med allt från video-, ljud-, och bildredigering till programmering.
+bodyClass: navHidden
+--- 
 
-<div class="home">
+<script>
+	var isFrontpage = true;
+</script>
 
-  <h1 class="page-heading">Posts</h1>
+<!--[if lt IE 9]>
+	<h2 class='ieAlert'>Sidan fungerar optimalt i <i>Internet Explorer 9</i> och högre</h2>
+<![endif]-->
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<main id="barba-wrapper">
+	<div class="scroll-container">
+		<div class="barba-container">
+			<section id="heading">
+				<h1>Ludvig<br>Larsendahl</h1>
+					<div class="lines">
+						<div class="lineOne"></div>
+						<div class="lineTwo"></div>
+					</div>
+				<h2>Front-end utvecklare<br>&amp; Webbdesigner</h2>
+			</section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>GhostOps GutHub</title>
-</head>
-<body>
-  <h1 style="text-align:center">Ez mah GitHub</h1>
-</body>
-</html>
+			<nav id="mainNav">
+				<ul>
+					<li><a href="om-mig">Om Mig</a></li>
+					<li><a href="projekt">Projekt</a></li>
+					<li><a href="kontakt">Kontakt</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</main>
