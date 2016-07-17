@@ -48,6 +48,8 @@ function easterEgg() {
   }
 }
 
+/* Frontpage is obsolete */
+/*
 $(document).ready(function() {
   if(typeof(isFrontpage) !== 'undefined') {
     var once = 0;
@@ -76,7 +78,7 @@ $(document).ready(function() {
       });
   }
 });
-
+*/
 
 if (window.location.host.substr(-14) == '.larsendahl.se' && window.location.protocol != 'https:') {
     window.location.protocol = 'https:';

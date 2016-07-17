@@ -1,37 +1,55 @@
 ---
 layout: default
-title: Ludvig Larsendahl - Webbkonsult
+title: Ludvig Larsendahl - Om mig
 description: Jag är en 19 år gammal nybliven student. Webben har varit min hobby och en stor del av mitt liv sedan högstadiet, jag har jobbat med allt från video-, ljud-, och bildredigering till programmering.
-bodyClass: navHidden
+permalink: /
+bodyClass: bottomPadding
 --- 
 
-<script>
-	var isFrontpage = true;
-</script>
-
-<!--[if lt IE 9]>
-	<h2 class='ieAlert'>Sidan fungerar optimalt i <i>Internet Explorer 9</i> och högre</h2>
-<![endif]-->
-
 <main id="barba-wrapper">
-	<div class="scroll-container">
-		<div class="barba-container">
-			<section id="heading">
-				<h1>Ludvig<br>Larsendahl</h1>
-					<div class="lines">
-						<div class="lineOne"></div>
-						<div class="lineTwo"></div>
-					</div>
-				<h2>Front-end utvecklare<br>&amp; Webbdesigner</h2>
-			</section>
+	<div class="barba-container">
+		<section id="about-container">
+			<div class="container">
+				<h1>Jag heter <span>Ludvig Larsendahl</span>,<br> jag utvecklar webblösningar.</h1>
+				
+				<div class="row">
+					<p class="story">
+						Jag är en 19 år gammal nybliven student som under gymnasietiden varit med och drivit två UF-företag inom webbranchen. Webben har varit min hobby och en stor del av mitt liv sedan högstadiet, jag har jobbat med allt från video-, ljud-, och bildredigering till programmering. Jag är en självlärd webbutvecklare och webbdesigner med inriktning på front-end.
+					</p>
+					<img class="myImg shadow" src="img/me.jpg" alt="Min profilbild">
+				</div>
+			</div>
 
-			<nav id="mainNav">
-				<ul>
-					<li><a href="om-mig">Om Mig</a></li>
-					<li><a href="projekt">Projekt</a></li>
-					<li><a href="kontakt">Kontakt</a></li>
+			<div class="devicesImg">
+				<div class="container row">
+					<p class="bold">
+						Jag letar för närvarande efter jobb, antingen som konsult inom projekt, eller anställning med fokus på webben. Om du tror att jag är rätt person för ditt företag eller projekt ta gärna en titt på mitt CV och LinkedIn nedan:<br><br>
+						<span style="text-align:center;cursor:pointer;" class="btn" onclick="window.location.href = '/CV.pdf'"><!--Lazy fix-->
+							CV
+						</span>
+						<a href="https://se.linkedin.com/in/larsendahl" class="btn">LinkedIn</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="container">
+				<h3>Jag har erfarenhet av följande teknologier:</h3>
+				<ul class="skillList">
+					<li><span class="devicons devicons-html5" data-tech="HTML5"></span></li>
+					<li><span class="devicons devicons-css3" data-tech="CSS3"></span></li>
+					<li><span class="devicons devicons-sass" data-tech="SASS/SCSS"></span></li>
+					<li><span class="devicons devicons-mysql" data-tech="MySQL"></span></li>
+					<li><span class="devicons devicons-php" data-tech="PHP"></span></li>
+					<li><span class="devicons devicons-wordpress" data-tech="Wordpress"></span></li>
+					<li><span class="devicons devicons-javascript_badge" data-tech="Javascript"></span></li>
+					<li><span class="devicons devicons-jquery" data-tech="JQuery"></span></li>
+					<li><span class="devicons devicons-linux" data-tech="Linux Admin"></span></li>
+					<li><span class="devicons devicons-phonegap" data-tech="Phonegap"></span></li>
+					<li><span class="devicons devicons-illustrator" data-tech="Adobe Illustrator"></span></li>
+					<li><span class="devicons devicons-photoshop" data-tech="Adobe Photoshop"></span></li>
 				</ul>
-			</nav>
-		</div>
+				<center><p><i><small>Med flera.</small></i></p></center><!--HTMLs finest!-->
+			</div>
+		</section>
 	</div>
 </main>
