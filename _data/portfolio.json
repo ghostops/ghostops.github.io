@@ -89,6 +89,12 @@
       "url": "https://ghostops.nu/metagen/",
       "description": "Min slutuppgift i kursen programmering 1. Ett verktyg för att generera metataggar.",
       "tags": ["PHP", "Bootstrap framework", "JQuery"]
+    },
+    {
+      "title": "Hälsoingenjörerna",
+      "url": "http://halsoingenjorerna.se/",
+      "description": "Wordpress-sida framtagen för Hälsoingenjörerna.",
+      "tags": ["Wordpress"]
     }
   ]
 }

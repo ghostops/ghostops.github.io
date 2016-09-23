@@ -85,8 +85,16 @@
 		float: right;
 		width: 60%;
 
+		a {
+			border-bottom: dashed 2px #FFFFFF;
+			&:hover {
+				border-bottom: inset 2px;
+			}
+		}
+
 		.btn {
 			font-size: 16pt;
+			border-bottom: solid 1px #FFFFFF;
 		}
 
 		@media (max-width: 1300px) {
