@@ -6,13 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Ludvig Larsendahl 
+title: UK-Sidan 
 email: ludvig@larsendahl.se
 description: > # this means to ignore newlines until "baseurl:"
-  Jag är en 19 år gammal nybliven student. Webben har varit min hobby och en stor del av mitt liv sedan högstadiet, 
-  jag har jobbat med allt från video-, ljud-, och bildredigering till programmering.
+  Västerås SOK UK-sidan
+keywords: "UK, VSOK, Västerås SOK, UK-sidan"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ludvig.larsendahl.se" # the base hostname & protocol for your site
+url: "https://vasterassok-uk.github.io/uk-sidan/" # the base hostname & protocol for your site
 twitter_username: ghostopsz
 github_username:  ghostops
 

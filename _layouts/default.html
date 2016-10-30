@@ -3,13 +3,15 @@
 
   {% include head.html %}
 
-  <body class="{{ page.bodyClass }}">
+  <body>
 
     {% include header.html %}
+	
+	<div class="ui container">
+		{{ content }}
+	</div>
 
-    {{ content }}
-
-    {% include social.html %}
+    {% include footer.html %}
 
   </body>
 
