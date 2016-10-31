@@ -1,0 +1,192 @@
+#about-container {
+	h1 {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 400;
+		font-size: 42pt;
+		margin-bottom: 50px;
+
+		span {
+			font-weight: 700;
+		}
+
+		@media (max-width: 1800px) {
+			max-width: 65%;
+			font-size: 36pt;
+		}
+
+		@media (max-width: 1655px) {
+			font-size: 32pt;
+		}
+
+		@media (max-width: 1500px) {
+			max-width: 70%;
+			font-size: 28pt;
+		}
+
+		@media (max-width: 1300px) {
+			max-width: 100%;
+			text-align: center;
+		}
+
+		@media (max-width: 480px) {
+			font-size: 22pt;
+		}
+	}
+
+	.story {
+		max-width: 65%;
+		line-height: 1.65;
+		float: left;
+
+		@media (max-width: 1600px) {
+			max-width: 60%;
+			font-size: 14pt;
+		}
+
+		@media (max-width: 870px) {
+			float: none;
+			max-width: 100%;
+			margin: 0 0 40px 0;
+		}
+	}
+
+	.myImg {
+		display: block;
+		float: right;
+		max-width: 400px;
+		width: 35%;
+		position: relative;
+		top: -175px;
+
+		@media (max-width: 1500px) {
+			width: 25%;
+			top: -125px;
+		}
+
+		@media (max-width: 1300px) {
+			top: 0;
+		}
+
+		@media (max-width: 870px) {
+			float: none;
+			margin: 0 10%;
+			width: 80%;
+		}
+	}
+
+	.bold {
+		position: relative;
+		top: 100px;
+
+		font-family: "Montserrat", sans-serif;
+		font-size: 22pt;
+		line-height: 1.65;
+		font-weight: 400;
+		float: right;
+		width: 60%;
+
+		a {
+			border-bottom: dashed 2px #FFFFFF;
+			&:hover {
+				border-bottom: inset 2px;
+			}
+		}
+
+		.btn {
+			font-size: 16pt;
+			border-bottom: solid 1px #FFFFFF;
+		}
+
+		@media (max-width: 1300px) {
+			width: 80%;
+		}
+
+		@media (max-width: 870px) {
+			width: 100%;
+			font-size: 18pt;
+		}
+
+		@media (max-width: 480px) {
+			font-size: 14pt;
+
+			.btn {
+				display: block;
+				text-align: center;
+				margin: 0 0 15px;
+			}
+		}
+	}
+
+	h3 {
+		font-family: "Raleway", sans-serif;
+		font-weight: 200;
+		text-align: center;
+		margin: 60px 0 20px;
+		font-size: 22pt;
+	}
+}
+.devicesImg {
+	width: 100%;
+	height: 800px;
+	background: url(../img/devices.svg) no-repeat left;
+	background-size: contain;
+	background-position: -65px 0;
+
+	@media (max-width: 870px) {
+		height: 550px;
+		background-size: 100%;
+	}
+}
+
+.skillList {
+	list-style: none;
+	max-width: 820px;
+	margin: 0 auto;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		margin: 50px;
+		text-align: center;
+
+		span {
+			font-size: 72pt;
+			position: relative;
+			display: block;
+			cursor: pointer;
+
+			&:after {
+				transition: all .45s ease;
+				visibility: hidden;
+				opacity: 0;
+				transform: translate(-50%, -20px);
+				position: absolute;
+				left: 50%;
+
+				content: attr(data-tech);
+				display: block;
+				font-size: 14pt;
+				font-family: "Montserrat", sans-serif;
+				background: $accent-color;
+				padding: 6px 4px;
+				border-radius: 3px;
+				z-index: 2;
+			}
+			&:hover {
+				&:after {
+					transform: translate(-50%, 10px);
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+
+		@media (max-width: 870px) {
+			margin: 25px;
+		}
+
+		@media (max-width: 870px) {
+			margin: 15px;
+		}
+	}
+}

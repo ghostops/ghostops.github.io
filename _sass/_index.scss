@@ -1,0 +1,157 @@
+#heading {
+	position: absolute;
+	left: 60px;
+	top: 60px;
+
+	width: 600px;
+	background: $accent-color;
+	padding: 40px 40px 80px 40px;
+
+	h1 {
+		padding-bottom: 15px;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		font-size: 68pt;
+	}
+
+	h2 {
+		padding-top: 15px;
+		font-family: "Raleway", sans-serif;
+		font-weight: 200;
+		font-size: 40pt;
+	}
+
+	@media (max-width: 1200px) {
+		width: 500px;
+		h1 {
+			font-size: 58pt;
+		}
+		h2 {
+			font-size: 33pt;
+		}
+	}
+
+	@media (max-width: 1000px) {
+		width: 40%;
+		h1 {
+			font-size: 48pt;
+		}
+		h2 {
+			font-size: 27pt;
+		}
+	}
+
+	@media (max-width: 870px) {
+		box-sizing: border-box;
+		width: 80%;
+		margin: 60px auto 20px;
+		position: relative;
+		left: 0; top: 0px;
+		text-align: center;
+	}
+
+	@media (max-width: 520px) {
+		padding: 35px;
+		width: 95%;
+
+		h1 {
+			font-size: 32pt;
+		}
+		h2 {
+			font-size: 20pt;
+		}
+	}
+}
+
+$lineW: 1000px;
+$lineH: 425px; 
+.lines {
+	position: absolute;
+	height: $lineH;
+	width: $lineW;
+	opacity: .45;
+	left: -65px;
+	pointer-events: none;
+
+	@media (max-width: 1300px) {
+		width: 850px;
+	}
+	@media (max-width: 1200px) {
+		width: 700px;
+		height: 325px;
+	}
+
+	@media (max-width: 1000px) {
+		width: 130%;
+		height: 325px;
+	}
+
+	@media (max-width: 870px) {
+		display: none;
+	}
+
+	.lineOne {
+		height: 1px;
+		width: 100%;
+		background: #FFF;
+	}
+	.lineTwo {
+		width: 1px;
+		height: 100%;
+		background: #FFF;
+
+		position: absolute;
+		right: 0; top: -50%;
+	}
+}
+
+#mainNav {
+	position: absolute;
+	left: $lineW + 50px;
+	top: 130px;
+
+	ul {
+		list-style: none;
+		line-height: 2.5;
+		text-transform: uppercase;
+
+		li {
+			font-weight: 200;
+			font-size: 42pt;
+			opacity: .8;
+			transition: opacity .2s ease;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+
+	@media (max-width: 1300px) {
+		left: 900px;
+	}
+
+	@media (max-width: 1200px) {
+		left: 730px;
+		top: 145px;
+		
+		ul li {
+			font-size: 32pt;
+		}
+	}
+
+	@media (max-width: 1000px) {
+		left: 68%;
+		top: 135px;
+		
+		ul li {
+			font-size: 28pt;
+		}
+	}
+
+	@media (max-width: 870px) {
+		position: relative;
+		left: 0; top: 0;
+		text-align: center;
+	}
+}
