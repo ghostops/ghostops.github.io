@@ -12,6 +12,7 @@ $transition-all: ease;
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 	transition: max-width .3s $transition-all, width .3s $transition-all, margin .3s $transition-all, 
 				top .3s $transition-all, bottom .3s $transition-all, left .3s $transition-all, right .3s $transition-all;
 }
@@ -51,7 +52,6 @@ svg {
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "about",
         "contact",
         "devicons",
         "global",

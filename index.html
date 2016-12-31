@@ -33,36 +33,43 @@ bodyClass: bottomPadding
 			</div>
 
 			<div class="container">
-				<h3>Jag har erfarenhet av följande teknologier:</h3>
-				<ul class="skillList">
-					<li><span class="devicons devicons-html5" data-tech="HTML5"></span></li>
-					<li><span class="devicons devicons-css3" data-tech="CSS3"></span></li>
-					<li><span class="devicons devicons-sass" data-tech="SASS/SCSS"></span></li>
-					<li><span class="devicons devicons-mysql" data-tech="MySQL"></span></li>
-					<li><span class="devicons devicons-php" data-tech="PHP"></span></li>
-					<li><span class="devicons devicons-wordpress" data-tech="Wordpress"></span></li>
-					<li><span class="devicons devicons-javascript_badge" data-tech="Javascript"></span></li>
-					<li><span class="devicons devicons-jquery" data-tech="JQuery"></span></li>
-					<li><span class="devicons devicons-linux" data-tech="Linux Admin"></span></li>
-					<li><span class="devicons devicons-phonegap" data-tech="Phonegap"></span></li>
-					<li><span class="devicons devicons-illustrator" data-tech="Adobe Illustrator"></span></li>
-					<li><span class="devicons devicons-photoshop" data-tech="Adobe Photoshop"></span></li>
-				</ul>
-				
-				<center style="margin-top: 20px;"><p><small>Fler, lite mer osorterade utvecklingssaker jag kan:</small></p></center> <!--HTMLs finest!-->
+				<h3>Listat nedan är olika sorters teknik/metodik jag har jobbat med</h3>
+				<div class="skillLists">
+					{% assign skills = site.data.skills.skills %}
+					
+					<div class="medium">
+						<h3>Lagom erfarenhet</h3>
+						
+						<div class="skills">
 
-				<ul class="skillList small">
-					<li><span class="devicons devicons-git"></span></li>
-					<li><span class="devicons devicons-github_badge"></span></li>
-					<li><span class="devicons devicons-trello"></span></li>
-					<li><span class="devicons devicons-python"></span></li>
-					<li><span class="devicons devicons-angular"></span></li>
-					<li><span class="devicons devicons-ionic"></span></li>
-					<li><span class="devicons devicons-gulp"></span></li>
-					<li><span class="devicons devicons-bower"></span></li>
-					<li><span class="devicons devicons-composer"></span></li>
-					<li><span class="devicons devicons-laravel"></span></li>
-				</ul>
+							{% for skill in skills.medium %}
+								{% include skill.html %}
+							{% endfor %}
+						</div>
+					</div>
+
+					<div class="majMin">
+						<div class="major">
+							<h3>Mycket bra erfarenhet</h3>
+							
+							<div class="skills">
+								{% for skill in skills.major %}
+									{% include skill.html %}
+								{% endfor %}
+							</div>
+						</div>
+
+						<div class="minor">
+							<h3>Lite erfarenhet</h3>
+							
+							<div class="skills">
+								{% for skill in skills.minor %}
+									{% include skill.html %}
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	</div>

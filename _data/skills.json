@@ -1,0 +1,92 @@
+{
+	"skills": {
+		"medium": [
+			{
+				"name": "git"
+			},
+			{
+				"name": "linux",
+				"label": "Linux Admin"
+			},
+			{
+				"name": "phonegap"
+			},
+			{
+				"name": "ionic"
+			},
+			{
+				"name": "angular",
+				"label": "AngularJS"
+			},
+			{
+				"name": "python"
+			},
+			{
+				"name": "gulp"
+			},
+			{
+				"name": "composer"
+			},
+			{
+				"name": "mysql",
+				"label": "MySQL"
+			},
+			{
+				"name": "wordpress"
+			},
+			{
+				"name": "jekyll",
+				"iconNameAppendage": "_small"
+			}
+		],
+		"major": [
+			{
+				"name": "github",
+				"iconNameAppendage": "_badge"
+			},
+			{
+				"name": "html5"
+			},
+			{
+				"name": "css3"
+			},
+			{
+				"name": "sass"
+			},
+			{
+				"name": "jquery"
+			},
+			{
+				"name": "photoshop"
+			},
+			{
+				"name": "php",
+				"label": "PHP"
+			},
+			{
+				"name": "javascript",
+				"iconNameAppendage": "_badge"
+			}
+		],
+		"minor": [
+			{
+				"name": "laravel"
+			},
+			{
+				"name": "visualstudio",
+				"label": "C#"
+			},
+			{
+				"name": "trello"
+			},
+			{
+				"name": "sqlite",
+				"iconName": "sqllite",
+				"label": "SQLite"
+			},
+			{
+				"name": "nodejs"
+			}
+		]
+	}
+}

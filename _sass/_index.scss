@@ -1,157 +1,203 @@
-#heading {
-	position: absolute;
-	left: 60px;
-	top: 60px;
-
-	width: 600px;
-	background: $accent-color;
-	padding: 40px 40px 80px 40px;
-
+#about-container {
 	h1 {
-		padding-bottom: 15px;
 		font-family: "Montserrat", sans-serif;
-		font-weight: 700;
-		font-size: 68pt;
-	}
+		font-weight: 400;
+		font-size: 42pt;
+		margin-bottom: 50px;
 
-	h2 {
-		padding-top: 15px;
-		font-family: "Raleway", sans-serif;
-		font-weight: 200;
-		font-size: 40pt;
-	}
-
-	@media (max-width: 1200px) {
-		width: 500px;
-		h1 {
-			font-size: 58pt;
+		span {
+			font-weight: 700;
 		}
-		h2 {
-			font-size: 33pt;
+
+		@media (max-width: 1800px) {
+			max-width: 65%;
+			font-size: 36pt;
 		}
-	}
 
-	@media (max-width: 1000px) {
-		width: 40%;
-		h1 {
-			font-size: 48pt;
-		}
-		h2 {
-			font-size: 27pt;
-		}
-	}
-
-	@media (max-width: 870px) {
-		box-sizing: border-box;
-		width: 80%;
-		margin: 60px auto 20px;
-		position: relative;
-		left: 0; top: 0px;
-		text-align: center;
-	}
-
-	@media (max-width: 520px) {
-		padding: 35px;
-		width: 95%;
-
-		h1 {
+		@media (max-width: 1655px) {
 			font-size: 32pt;
 		}
-		h2 {
-			font-size: 20pt;
+
+		@media (max-width: 1500px) {
+			max-width: 70%;
+			font-size: 28pt;
+		}
+
+		@media (max-width: 1300px) {
+			max-width: 100%;
+			text-align: center;
+		}
+
+		@media (max-width: 480px) {
+			font-size: 22pt;
 		}
 	}
-}
 
-$lineW: 1000px;
-$lineH: 425px; 
-.lines {
-	position: absolute;
-	height: $lineH;
-	width: $lineW;
-	opacity: .45;
-	left: -65px;
-	pointer-events: none;
+	.story {
+		max-width: 65%;
+		line-height: 1.65;
+		float: left;
 
-	@media (max-width: 1300px) {
-		width: 850px;
-	}
-	@media (max-width: 1200px) {
-		width: 700px;
-		height: 325px;
+		@media (max-width: 1600px) {
+			max-width: 60%;
+			font-size: 14pt;
+		}
+
+		@media (max-width: 870px) {
+			float: none;
+			max-width: 100%;
+			margin: 0 0 40px 0;
+		}
 	}
 
-	@media (max-width: 1000px) {
-		width: 130%;
-		height: 325px;
+	.myImg {
+		display: block;
+		float: right;
+		max-width: 400px;
+		width: 35%;
+		position: relative;
+		top: -175px;
+
+		@media (max-width: 1500px) {
+			width: 25%;
+			top: -125px;
+		}
+
+		@media (max-width: 1300px) {
+			top: 0;
+		}
+
+		@media (max-width: 870px) {
+			float: none;
+			margin: 0 10%;
+			width: 80%;
+		}
 	}
 
-	@media (max-width: 870px) {
-		display: none;
-	}
+	.bold {
+		position: relative;
+		top: 100px;
 
-	.lineOne {
-		height: 1px;
-		width: 100%;
-		background: #FFF;
-	}
-	.lineTwo {
-		width: 1px;
-		height: 100%;
-		background: #FFF;
+		font-family: "Montserrat", sans-serif;
+		font-size: 22pt;
+		line-height: 1.65;
+		font-weight: 400;
+		float: right;
+		width: 60%;
 
-		position: absolute;
-		right: 0; top: -50%;
-	}
-}
-
-#mainNav {
-	position: absolute;
-	left: $lineW + 50px;
-	top: 130px;
-
-	ul {
-		list-style: none;
-		line-height: 2.5;
-		text-transform: uppercase;
-
-		li {
-			font-weight: 200;
-			font-size: 42pt;
-			opacity: .8;
-			transition: opacity .2s ease;
-
+		a {
+			border-bottom: dashed 2px #FFFFFF;
 			&:hover {
-				opacity: 1;
+				border-bottom: inset 2px;
+			}
+		}
+
+		.btn {
+			font-size: 16pt;
+			border-bottom: solid 1px #FFFFFF;
+		}
+
+		@media (max-width: 1300px) {
+			width: 80%;
+		}
+
+		@media (max-width: 870px) {
+			width: 100%;
+			font-size: 18pt;
+		}
+
+		@media (max-width: 480px) {
+			font-size: 14pt;
+
+			.btn {
+				display: block;
+				text-align: center;
+				margin: 0 0 15px;
 			}
 		}
 	}
 
-	@media (max-width: 1300px) {
-		left: 900px;
+	h3 {
+		font-family: "Raleway", sans-serif;
+		font-weight: 200;
+		text-align: center;
+		margin: 60px 0 20px;
+		font-size: 22pt;
 	}
-
-	@media (max-width: 1200px) {
-		left: 730px;
-		top: 145px;
-		
-		ul li {
-			font-size: 32pt;
-		}
-	}
-
-	@media (max-width: 1000px) {
-		left: 68%;
-		top: 135px;
-		
-		ul li {
-			font-size: 28pt;
-		}
-	}
+}
+.devicesImg {
+	width: 100%;
+	height: 800px;
+	background: url(../img/devices.svg) no-repeat left;
+	background-size: contain;
+	background-position: -65px 0;
 
 	@media (max-width: 870px) {
-		position: relative;
-		left: 0; top: 0;
-		text-align: center;
+		height: 550px;
+		background-size: 100%;
 	}
+}
+
+$skillListBreakpoint: 640px;
+.skillLists {
+	display: flex;
+	justify-content: space-between;
+
+	max-width: 1100px;
+	margin: 0 auto;
+
+	@media (max-width: $skillListBreakpoint) {
+		flex-direction: column;
+	}
+
+	h3 {
+		@media (max-width: $skillListBreakpoint) {
+			font-size: 16pt !important;
+		}
+	}
+
+	& > div {
+		width: 50%;
+
+		@media (max-width: $skillListBreakpoint) {
+			width: 100%;
+		}
+	}
+
+	.skills {
+		display: inline-flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		width: 100%;
+
+		.skill {
+			width: 33%;
+			text-align: center;
+			padding: 20px;
+
+			.devicons {
+				font-size: 26pt;
+				@media (max-width: $skillListBreakpoint) {
+					font-size: 22pt;
+				}
+			}
+
+			.label {
+				font-size: 12pt;
+				margin-top: 5px;
+
+				@media (max-width: $skillListBreakpoint) {
+					font-size: 11pt;
+				}
+			}
+		}
+	}
+
+	.medium .skills .skill .devicons {
+		font-size: 52pt;
+
+		@media (max-width: $skillListBreakpoint) {
+			font-size: 34pt;
+		}
+	} 
 }
