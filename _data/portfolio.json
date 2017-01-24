@@ -53,7 +53,7 @@
       "url": "https://hired.nu/",
       "description": "App till ett UF-företag som matchade ihop ungdommar som söker jobb med arbetsgivare. Till Android och iOS!",
       "tags": ["PHP", "MySQL", "JQuery", "PhoneGap", "SCSS"]
-    }
+    },
     {
       "title": "Bil och Traktorservice",
       "url": "http://biltraktor.beseen.io/",
