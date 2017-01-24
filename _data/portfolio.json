@@ -53,13 +53,7 @@
       "url": "https://hired.nu/",
       "description": "App till ett UF-företag som matchade ihop ungdommar som söker jobb med arbetsgivare. Till Android och iOS!",
       "tags": ["PHP", "MySQL", "JQuery", "PhoneGap", "SCSS"]
-    },
-    {
-      "title": "Anmälan SGF",
-      "url": "https://anmalansgf.beseen.io/",
-      "description": "Anmälningssystem utvecklat för Sveriges Grisföretagare i samarbete med Fyrklövern. Systemet är kopplat till fakturering via Fortnox.",
-      "tags": ["PHP", "Bootstrap framework", "MySQL", "JQuery", "Javascript Validation", "Fortnox API", "Mailgun API"]
-    },
+    }
     {
       "title": "Bil och Traktorservice",
       "url": "http://biltraktor.beseen.io/",
