@@ -55,12 +55,6 @@
       "tags": ["PHP", "MySQL", "JQuery", "PhoneGap", "SCSS"]
     },
     {
-      "title": "Anmälan SGF",
-      "url": "https://anmalansgf.beseen.io/",
-      "description": "Anmälningssystem utvecklat för Sveriges Grisföretagare i samarbete med Fyrklövern. Systemet är kopplat till fakturering via Fortnox.",
-      "tags": ["PHP", "Bootstrap framework", "MySQL", "JQuery", "Javascript Validation", "Fortnox API", "Mailgun API"]
-    },
-    {
       "title": "Bil och Traktorservice",
       "url": "http://biltraktor.beseen.io/",
       "description": "Bil och Traktorservice är en återförsäljare av John Deere Lantbruks- och grönytemaskiner. De har ett flertal filialer i mellansverige.Vi skapade en app som visar dessa butiker på en karta samt deras öppetider och telefonnummer. Till appen skapade vi även ett webbgrännsnitt där all infromation i appen kan ändras.",
