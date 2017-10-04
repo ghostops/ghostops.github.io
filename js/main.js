@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
+  bubbly({
+    colorStart: "#446CB3",
+    colorStop: "#3d61a1",
+  });
   var lastElementClicked;
 
   Barba.Pjax.init();
