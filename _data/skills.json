@@ -41,6 +41,13 @@
 			{
 				"name": "github",
 				"iconNameAppendage": "_badge"
+			},
+			{
+				"name": "laravel"
+			},
+			{
+				"name": "typescript",
+				"iconNameAppendage": "-plain"
 			}
 		],
 		"major": [
@@ -70,7 +77,11 @@
 		],
 		"minor": [
 			{
-				"name": "laravel"
+				"name": "react"
+			},
+			{
+				"name": "react",
+				"label": "React Native"
 			},
 			{
 				"name": "visualstudio",
