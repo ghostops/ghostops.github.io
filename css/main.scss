@@ -6,6 +6,8 @@
 $brand-color: #446CB3;
 $accent-color: darken(#446CB3, 5%); //#3d61a1
 
+$header-height: 110px;
+
 //Reset stuff
 
 $transition-all: ease;
@@ -57,5 +59,6 @@ svg {
         "global",
         "index",
         "projects",
-        "portfolio"
+		"portfolio",
+		"new"
 ;

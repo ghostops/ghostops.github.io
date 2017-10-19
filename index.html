@@ -8,68 +8,17 @@ bodyClass: bottomPadding
 
 <main id="barba-wrapper">
 	<div class="barba-container">
-		<section id="about-container">
-			<div class="container">
-				<h1>Jag heter <span>Ludvig Larsendahl</span>,<br> jag utvecklar webblösningar.</h1>
-				
-				<div class="row">
-					<p class="story">
-						Jag är en 19 år gammal nybliven student som under gymnasietiden varit med och drivit två UF-företag inom webbranchen. Webben har varit min hobby och en stor del av mitt liv sedan högstadiet, jag har jobbat med allt från video-, ljud-, och bildredigering till programmering. Jag är en självlärd webbutvecklare och webbdesigner med inriktning på front-end.
-					</p>
+		<div class="hero">
+			<div class="inner">
+				<div class="heading">
+					<span class="heroHeading"></span>
+				</div>
+				<div class="description">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+					Aspernatur commodi voluptate beatae maxime praesentium ducimus qui iste omnis 
+					laudantium magnam libero doloremque ea quae, eius harum inventore quasi cum a!
 				</div>
 			</div>
-
-			<div class="devicesImg">
-				<div class="container row">
-					<p class="bold">
-						Jag jobbar just nu på <a href="http://justfootballapp.com/">JustFootball</a> i Stockholm. Jag finns fortfarande sporadiskt tillgänglig för mindre frilans/konsultprojekt, se mitt CV och min LinkedIn nedan!<br><br>
-						<span style="text-align:center;cursor:pointer;" class="btn" onclick="window.location.href = '/CV.pdf'"><!--Lazy fix-->
-							CV
-						</span>
-						<a href="https://se.linkedin.com/in/larsendahl" class="btn">LinkedIn</a>
-					</p>
-				</div>
-			</div>
-
-			<div class="container">
-				<h3>Listat nedan är olika sorters teknik/metodik jag har jobbat med</h3>
-				<div class="skillLists">
-					{% assign skills = site.data.skills.skills %}
-					
-					<div class="medium">
-						<h3>Lagom erfarenhet</h3>
-						
-						<div class="skills">
-
-							{% for skill in skills.medium %}
-								{% include skill.html %}
-							{% endfor %}
-						</div>
-					</div>
-
-					<div class="majMin">
-						<div class="major">
-							<h3>Mycket bra erfarenhet</h3>
-							
-							<div class="skills">
-								{% for skill in skills.major %}
-									{% include skill.html %}
-								{% endfor %}
-							</div>
-						</div>
-
-						<div class="minor">
-							<h3>Lite erfarenhet</h3>
-							
-							<div class="skills">
-								{% for skill in skills.minor %}
-									{% include skill.html %}
-								{% endfor %}
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		</div>
 	</div>
 </main>

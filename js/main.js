@@ -1,8 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-  bubbly({
-    colorStart: "#446CB3",
-    colorStop: "#3d61a1",
-  });
   var lastElementClicked;
 
   Barba.Pjax.init();
@@ -52,38 +48,14 @@ function easterEgg() {
   }
 }
 
-/* Frontpage is obsolete */
-/*
-$(document).ready(function() {
-  if(typeof(isFrontpage) !== 'undefined') {
-    var once = 0;
-    $("#mainNav a").click(function() {
-      once = 1;
-      $("body").removeClass("navHidden");
-      $("body").addClass("bottomPadding");
-    });
-      $(window).bind('mousewheel', function(e){
-        if(!once) {
-            if(e.originalEvent.wheelDelta /120 < 0) {
-              $(".scroll-container").fadeOut(300, function() { 
-                $(this).html("");
-                $("body").removeClass("navHidden");
-                $("body").addClass("bottomPadding");
-
-                $.get( "om-mig.html", function( data ) {
-              var div = $(data).find(".barba-container");
-              $(".scroll-container").html(div);
-              $(".scroll-container").fadeIn(300);
-            });
-              });
-            }
-        once = 1;
-        }
-      });
-  }
-});
-*/
-
 if (window.location.host.substr(-14) == '.larsendahl.se' && window.location.protocol != 'https:') {
     window.location.protocol = 'https:';
 }
+
+// Hero typing
+var typed = new Typed('.heroHeading', {
+  strings: ["Ludvig Larsendahl", "Full-Stack Webdev"],
+  typeSpeed: 60,
+  startDelay: 500,
+  backDelay: 1000,
+});

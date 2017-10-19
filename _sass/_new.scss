@@ -1,0 +1,40 @@
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.45), 
+        rgba(0, 0, 0, 0.45)
+        ),    
+        url(../img/sketch.jpg) 
+        white;
+    background-size: cover;
+    position: relative;
+    top: -$header-height;
+    
+    .inner {
+        position: absolute;
+        left: 5%; bottom: 15%;
+    }
+
+    .heading {
+        margin-bottom: 1%;
+
+        .heroHeading {
+            font-size: 6vw;
+            font-weight: 700;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .typed-cursor {
+            font-size: 6vw;
+        }
+    }
+
+    .description {
+        max-width: 60%;
+        border-top: solid 10px white;
+        padding-top: 1%;
+        text-shadow:0 0 0 white, 0 0 1px transparent;
+    }
+}
