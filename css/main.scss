@@ -164,6 +164,8 @@ header {
 	border: 15px solid white;
 	padding: 30px;
 	min-height: 100%;
+	position: relative;
+	z-index: 1;
 }
 
 .textArea {	
@@ -195,4 +197,16 @@ header {
 	.email:before {
 		content: attr(data-user) "\0040" attr(data-website);
 	}
+}
+
+.square {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 150px;
+	right: 150px;
+	background-color: darken(#f1f2f6, 10%);
+	opacity: .35;
+	transform: rotate(45deg);
+	z-index: 0;
 }
