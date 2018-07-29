@@ -66,8 +66,11 @@ $text-color: rgb(36, 36, 36);
 
 body,
 html {
-	height: 100%;
 	min-height: 100%;
+}
+
+html {
+	background-color: #ffffff;
 }
 
 body {
@@ -85,8 +88,37 @@ h1, h2, h3, h4 {
 	line-height: 1.5;
 }
 
+h2 {
+	font-size: 1.25em;
+	margin-top: 20px;
+
+	@media (min-width: 960px) {
+		font-size: 1.75em;
+	}
+}
+
+a {
+	color: rgb(56, 56, 56);
+	&:hover { color: rgb(143, 143, 143); }
+}
+
+p {
+	padding-top: 2%;
+	line-height: 1.35;
+
+	@media (min-width: 960px) {
+		&:first-child {
+			padding-top: 0;
+		}
+	}
+}
+
 header {
 	padding-top: 15%;
+
+	@media (min-width: 960px) {
+		min-height: 100vh;
+	}
 
 	h1 {
 		font-size: 2em;
@@ -98,11 +130,11 @@ header {
 		}
 
 		@media (min-width: 760px) {
-			font-size: 6em;
+			font-size: 5em;
 		}
 
 		@media (min-width: 960px) {
-			font-size: 7em;
+			font-size: 6em;
 		}
 	}
 
@@ -113,14 +145,13 @@ header {
 	}
 
 	p {
+		font-size: 1em;
 		padding-top: 10px;
+		line-height: 1.35;
 
 		@media (min-width: 760px) {
 			max-width: 80%;
-		}
-
-		@media (min-width: 760px) {
-			max-width: 70%;
+			font-size: 1.25em;
 		}
 
 		@media (min-width: 960px) {
@@ -133,4 +164,35 @@ header {
 	border: 15px solid white;
 	padding: 30px;
 	min-height: 100%;
+}
+
+.textArea {	
+	@media (min-width: 960px) {
+		font-size: 1.15em;
+		max-width: 50%;
+	}
+}
+
+.skillArea {
+	padding-top: 2%;
+
+	.skillList {
+		list-style: circle;
+		padding-left: 20px;
+		padding-top: 10px;
+
+		li {
+			margin-top: 12px;
+		}
+	}
+}
+
+.contactArea {
+	p {
+		padding-top: 2%;
+	}
+
+	.email:before {
+		content: attr(data-user) "\0040" attr(data-website);
+	}
 }

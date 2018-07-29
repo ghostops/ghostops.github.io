@@ -4,7 +4,12 @@ title: Ludvig Larsendahl
 description: Jag är en 19 år gammal nybliven student. Webben har varit min hobby och en stor del av mitt liv sedan högstadiet, jag har jobbat med allt från video-, ljud-, och bildredigering till programmering.
 permalink: /
 bodyClass: bottomPadding
---- 
+---
+
+{% assign years = site.time | date: '%Y' | minus: 0 %}
+{% assign working_years = years | minus: 2015  %}
+{% assign company = "Just Football"  %}
+{% assign company_link = "https://justfootball.io"  %}
 
 <main class="container">
 	<header>
@@ -16,10 +21,82 @@ bodyClass: bottomPadding
 		<hr />
 
 		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-			Possimus facere explicabo debitis iure impedit reiciendis ipsa 
-			quas maxime aut facilis, ullam dolorem sit, a vitae illo consequatur 
-			in, mollitia commodi!
+			Self taught developer with a passion for computers. 
+			Programming, video-, audio-, and photo editing,
+			are only some of the things I've done.
 		</p>
 	</header>
+
+	<section class="textArea">
+		<h2>About me</h2>
+
+		<p>
+			I have spent the past {{working_years}} years working with the latest and greatest
+			tech for building native apps, web apps, and back-end infrastructure.
+			I have both on a professional and hobbyist basis worked with tools and concepts
+			such as agile development, continous integration, and test driven development.
+		</p>
+
+		<p>
+			I am a fast learner with a passion for solving user problems with code.
+			I am programing language/database agnostic, but I've spent most of my time
+			writing Javascript/Typescript utilizing React.
+		</p>
+
+		<p>
+			Currently working at: <a href="{{company_link}}">{{company}}</a>
+		</p>
+	</section>
+
+	<section class="skillArea">
+		<h2>Development Skills</h2>
+
+		<ul class="skillList">
+			<li>
+				AWS: Beanstalk, S3, Cloudfront, Lambda, EC2, DynamoDB
+			</li>
+			<li>
+				iOS: Swift, XCode
+			</li>
+			<li>
+				Android: Groovy/Gradle, Java, XML
+			</li>
+			<li>
+				Classic Web: Wordpress, Typescript &amp; Javascript, Sass, PHP, Laravel, JQuery, AngularJS
+			</li>
+			<li>
+				React: React, Redux, React Native
+			</li>
+			<li>
+				Various: C#, Python (w. Flask), NodeJS (w. Express &amp; Protobuffers)
+			</li> 
+			<li>
+				Database: Postgres, MySQL, SQLite
+			</li>
+			<li>
+				Server Admin: Ubuntu, Debian, Apache, Nginx, Digital Ocean
+			</li>
+			<li>
+				Deployment: AWS, Heroku, Netlify, Github Pages
+			</li> 
+			<li>
+				Build Tools: Webpack, gulp
+			</li>
+			<li>
+				Devops: Docker, AWS, Jenkins, circleci, Kubernetes
+			</li>
+			<li>
+				Testing: Jasmine, Enzyme, Jest
+			</li>
+		</ul>
+	</section>
+
+	<section class="contactArea">
+			<h2>Contact me</h2>
+	
+			<p>
+				If you want to get in touch connect with me on <a href="https://www.linkedin.com/in/larsendahl/">LinkedIn</a>
+				or email me at: <i class="email" data-user="ludvig" data-website="ghostops.nu"></i>
+			</p>
+		</section>
 </main>
