@@ -4,72 +4,105 @@ title: Ludvig Larsendahl
 description: Jag är en 19 år gammal nybliven student. Webben har varit min hobby och en stor del av mitt liv sedan högstadiet, jag har jobbat med allt från video-, ljud-, och bildredigering till programmering.
 permalink: /
 bodyClass: bottomPadding
---- 
+---
 
-<main id="barba-wrapper">
-	<div class="barba-container">
-		<section id="about-container">
-			<div class="container">
-				<h1>Jag heter <span>Ludvig Larsendahl</span>,<br> jag utvecklar webblösningar.</h1>
-				
-				<div class="row">
-					<p class="story">
-						Jag är en 19 år gammal nybliven student som under gymnasietiden varit med och drivit två UF-företag inom webbranchen. Webben har varit min hobby och en stor del av mitt liv sedan högstadiet, jag har jobbat med allt från video-, ljud-, och bildredigering till programmering. Jag är en självlärd webbutvecklare och webbdesigner med inriktning på front-end.
-					</p>
-				</div>
-			</div>
+{% assign years = site.time | date: '%Y' | minus: 0 %}
+{% assign working_years = years | minus: 2015  %}
+{% assign company = "Just Football"  %}
+{% assign company_link = "https://justfootball.io"  %}
 
-			<div class="devicesImg">
-				<div class="container row">
-					<p class="bold">
-						Jag jobbar just nu på <a href="http://justfootballapp.com/">JustFootball</a> i Stockholm. Jag finns fortfarande sporadiskt tillgänglig för mindre frilans/konsultprojekt, se mitt CV och min LinkedIn nedan!<br><br>
-						<span style="text-align:center;cursor:pointer;" class="btn" onclick="window.location.href = '/CV.pdf'"><!--Lazy fix-->
-							CV
-						</span>
-						<a href="https://se.linkedin.com/in/larsendahl" class="btn">LinkedIn</a>
-					</p>
-				</div>
-			</div>
+<main class="container">
+	<div class="square"></div>
 
-			<div class="container">
-				<h3>Listat nedan är olika sorters teknik/metodik jag har jobbat med</h3>
-				<div class="skillLists">
-					{% assign skills = site.data.skills.skills %}
-					
-					<div class="medium">
-						<h3>Lagom erfarenhet</h3>
-						
-						<div class="skills">
+	<header>
+		<h1>
+			Ludvig<br>
+			Larsendahl
+		</h1>
 
-							{% for skill in skills.medium %}
-								{% include skill.html %}
-							{% endfor %}
-						</div>
-					</div>
+		<hr />
 
-					<div class="majMin">
-						<div class="major">
-							<h3>Mycket bra erfarenhet</h3>
-							
-							<div class="skills">
-								{% for skill in skills.major %}
-									{% include skill.html %}
-								{% endfor %}
-							</div>
-						</div>
+		<p>
+			Self-taught developer with a passion for computers. 
+			Programming, video-, audio-, and photo editing, 
+			are only some of the things I've done.
+		</p>
+	</header>
 
-						<div class="minor">
-							<h3>Lite erfarenhet</h3>
-							
-							<div class="skills">
-								{% for skill in skills.minor %}
-									{% include skill.html %}
-								{% endfor %}
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+	<section class="max50">
+		<h2>About me</h2>
+
+		<p>
+			I have spent the past {{working_years}} years working with the latest and greatest tech for building 
+			native apps, web apps, and back-end infrastructure. I have both on a professional 
+			and hobbyist basis worked with tools and concepts such as agile development, continuous 
+			integration, and test-driven development.
+		</p>
+
+		<p>
+			I am a fast learner with a passion for solving problems with code. I am programing 
+			language/database agnostic, but I've spent most of my time writing JavaScript/TypeScript 
+			utilizing React, Node, and Postgres.
+		</p>
+
+		<p>
+			Currently working at: <a href="{{company_link}}">{{company}}</a>
+		</p>
+	</section>
+
+	<section>
+		<h2>Development Skills</h2>
+
+		<p>
+			Some, if not most, of my development skillset:
+		</p>
+
+		<ul class="skillList">
+			<li>
+				<strong>AWS:</strong> Beanstalk, S3, Cloudfront, Lambda, EC2, DynamoDB
+			</li>
+			<li>
+				<strong>iOS:</strong> Swift, XCode
+			</li>
+			<li>
+				<strong>Android:</strong> Groovy/Gradle, Java, XML
+			</li>
+			<li>
+				<strong>Classic Web:</strong> Wordpress, TypeScript &amp; JavaScript, Sass, PHP, Laravel, JQuery, AngularJS
+			</li>
+			<li>
+				<strong>React:</strong> React, Redux, React Native
+			</li>
+			<li>
+				<strong>Various:</strong> C#, Python (w. Flask), NodeJS (w. Express &amp; Protobuffers)
+			</li> 
+			<li>
+				<strong>Database:</strong> Postgres, MySQL, SQLite
+			</li>
+			<li>
+				<strong>Server Admin:</strong> Ubuntu, Debian, Apache, Nginx, Digital Ocean
+			</li>
+			<li>
+				<strong>Deployment:</strong> AWS, Heroku, Netlify, Github Pages
+			</li> 
+			<li>
+				<strong>Build Tools:</strong> Webpack, gulp
+			</li>
+			<li>
+				<strong>Devops:</strong> Docker, AWS, Jenkins, circleci, Kubernetes
+			</li>
+			<li>
+				<strong>Testing:</strong> Jasmine, Enzyme, Jest
+			</li>
+		</ul>
+	</section>
+
+	<section class="contactArea">
+			<h2>Contact me</h2>
+	
+			<p>
+				If you want to get in touch connect with me on <a href="https://www.linkedin.com/in/larsendahl/">LinkedIn</a>
+				or email me at: <i class="email" data-user="ludvig" data-website="ghostops.nu"></i>
+			</p>
 		</section>
-	</div>
 </main>
