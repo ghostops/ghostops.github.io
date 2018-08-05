@@ -1,12 +1,11 @@
 # Site settings
 title: Ludvig Larsendahl
 description: > # this means to ignore newlines until "baseurl:"
-  Jag är en 19 år gammal nybliven student. Webben har varit min hobby och en stor del av mitt liv sedan högstadiet, 
-  jag har jobbat med allt från video-, ljud-, och bildredigering till programmering.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ludvig.larsendahl.se" # the base hostname & protocol for your site
-twitter_username: ghostopsz
-github_username:  ghostops
+  Self-taught developer with a passion for computers. 
+  Programming, video-, audio-, and photo editing, 
+  are only some of the things I've done.
+baseurl: ""
+url: "https://ludvig.larsendahl.se"
 
 # Build settings
 markdown: kramdown
