@@ -11,9 +11,9 @@ bodyClass: bottomPadding
 {% assign company = "Just Football"  %}
 {% assign company_link = "https://justfootball.io"  %}
 
-<div class="square"></div>
-
 <main class="container">
+	<div class="square"></div>
+
 	<header>
 		<h1>
 			Ludvig<br>
@@ -29,11 +29,11 @@ bodyClass: bottomPadding
 		</p>
 	</header>
 
-	<section class="textArea">
+	<section class="max50">
 		<h2>About me</h2>
 
 		<p>
-			I have spent the past 3 years working with the latest and greatest tech for building 
+			I have spent the past {{working_years}} years working with the latest and greatest tech for building 
 			native apps, web apps, and back-end infrastructure. I have both on a professional 
 			and hobbyist basis worked with tools and concepts such as agile development, continuous 
 			integration, and test-driven development.
@@ -50,45 +50,49 @@ bodyClass: bottomPadding
 		</p>
 	</section>
 
-	<section class="skillArea">
+	<section>
 		<h2>Development Skills</h2>
+
+		<p>
+			Some, if not most, of my development skillset:
+		</p>
 
 		<ul class="skillList">
 			<li>
-				AWS: Beanstalk, S3, Cloudfront, Lambda, EC2, DynamoDB
+				<strong>AWS:</strong> Beanstalk, S3, Cloudfront, Lambda, EC2, DynamoDB
 			</li>
 			<li>
-				iOS: Swift, XCode
+				<strong>iOS:</strong> Swift, XCode
 			</li>
 			<li>
-				Android: Groovy/Gradle, Java, XML
+				<strong>Android:</strong> Groovy/Gradle, Java, XML
 			</li>
 			<li>
-				Classic Web: Wordpress, TypeScript &amp; JavaScript, Sass, PHP, Laravel, JQuery, AngularJS
+				<strong>Classic Web:</strong> Wordpress, TypeScript &amp; JavaScript, Sass, PHP, Laravel, JQuery, AngularJS
 			</li>
 			<li>
-				React: React, Redux, React Native
+				<strong>React:</strong> React, Redux, React Native
 			</li>
 			<li>
-				Various: C#, Python (w. Flask), NodeJS (w. Express &amp; Protobuffers)
+				<strong>Various:</strong> C#, Python (w. Flask), NodeJS (w. Express &amp; Protobuffers)
 			</li> 
 			<li>
-				Database: Postgres, MySQL, SQLite
+				<strong>Database:</strong> Postgres, MySQL, SQLite
 			</li>
 			<li>
-				Server Admin: Ubuntu, Debian, Apache, Nginx, Digital Ocean
+				<strong>Server Admin:</strong> Ubuntu, Debian, Apache, Nginx, Digital Ocean
 			</li>
 			<li>
-				Deployment: AWS, Heroku, Netlify, Github Pages
+				<strong>Deployment:</strong> AWS, Heroku, Netlify, Github Pages
 			</li> 
 			<li>
-				Build Tools: Webpack, gulp
+				<strong>Build Tools:</strong> Webpack, gulp
 			</li>
 			<li>
-				Devops: Docker, AWS, Jenkins, circleci, Kubernetes
+				<strong>Devops:</strong> Docker, AWS, Jenkins, circleci, Kubernetes
 			</li>
 			<li>
-				Testing: Jasmine, Enzyme, Jest
+				<strong>Testing:</strong> Jasmine, Enzyme, Jest
 			</li>
 		</ul>
 	</section>

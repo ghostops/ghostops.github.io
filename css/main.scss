@@ -70,16 +70,22 @@ html {
 }
 
 html {
-	background-color: #ffffff;
+	background-color: #fdfdfd;
 }
 
 body {
 	font-size: 100%;
-	background-color: #f1f2f6;
+	background-image: url(/img/funky-lines.png);
 	color: $text-color;
+	padding: 10px;
 
 	@media (min-width: 400px) {
+		padding: 15px;
 		font-size: 125%;
+	}
+
+	@media (min-width: 720px) {
+		padding: 30px;
 	}
 }
 
@@ -110,6 +116,31 @@ p {
 		&:first-child {
 			padding-top: 0;
 		}
+	}
+}
+
+strong {
+	font-weight: bold;
+	text-decoration: underline;
+	color: lighten($text-color, 3%);
+}
+
+li {
+	line-height: 1.35;
+}
+
+.container {
+	background-color: #f1f2f6;
+	padding: 30px;
+	min-height: 100%;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.max50 {
+	@media(min-width: 960px) {
+		max-width: 50%;
 	}
 }
 
@@ -160,40 +191,16 @@ header {
 	}
 }
 
-.container {
-	border: 15px solid white;
-	padding: 30px;
-	min-height: 100%;
-	position: relative;
-	z-index: 1;
-}
+.skillList {
+	list-style: circle;
+	padding-left: 20px;
 
-.textArea {	
-	@media (min-width: 960px) {
-		font-size: 1.15em;
-		max-width: 50%;
-	}
-}
-
-.skillArea {
-	padding-top: 2%;
-
-	.skillList {
-		list-style: circle;
-		padding-left: 20px;
-		padding-top: 10px;
-
-		li {
-			margin-top: 12px;
-		}
+	li {
+		margin-top: 12px;
 	}
 }
 
 .contactArea {
-	p {
-		padding-top: 2%;
-	}
-
 	.email:before {
 		content: attr(data-user) "\0040" attr(data-website);
 	}
@@ -205,8 +212,8 @@ header {
 	position: absolute;
 	top: 150px;
 	right: 150px;
-	background-color: darken(#f1f2f6, 10%);
+	background-color: darken(#f1f2f6, 5%);
 	opacity: .35;
 	transform: rotate(45deg);
-	z-index: 0;
+	z-index: -1;
 }
