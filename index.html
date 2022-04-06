@@ -1,124 +1,83 @@
----
-layout: default
-title: Ludvig Larsendahl
-permalink: /
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ludvig Larsendahl</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='icon' href='./images/favicon.png' type='image/png'>
 
-{% assign years = site.time | date: '%Y' | minus: 0 %}
-{% assign working_years = years | minus: 2015  %}
-{% assign company = "at Kanzen doing freelance consulting"  %}
-{% assign company_link = "https://www.linkedin.com/in/larsendahl/"  %}
+  <!--General Meta-->
+  <meta name="description" content="Expert React Native developer, Full-stack Software Engineer, life long learner with a growth mindset.">
 
-<main class="container">
-	<div class="square"></div>
+  <!--OG-->
+  <meta property='og:title' content='Ludvig Larsendahl'>
+  <meta property='og:url' content='http://ludvig.larsendahl.se/'>
+  <meta property='og:description' content='Expert React Native developer, Full-stack Software Engineer, life long learner with a growth mindset.'>
 
-	<header>
-		<h1>
-			Ludvig<br>
-			Larsendahl
-		</h1>
+  <!--Styles-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-		<hr />
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
 
-		<p>
-			Software Engineer from Sweden with a love for technology.
-			I'm a generalist on everything technical and a specialist in systems development.
-			I deal with anything from video/photo/audio-editing to IT and software engineering.
-		</p>
+  <!--URL and rss-->
+  <link rel="canonical" href="http://ludvig.larsendahl.se/index.html">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Ludvig Larsendahl</h1>
+      <h2>Full-stack Software Engineer, React Native Expert</h2>
+    </header>
 
-		<p><a href="https://github.com/ghostops">Check out my GitHub!</a></p>
-	</header>
+    <nav>
+      <a href="https://www.linkedin.com/in/larsendahl/" target="_blank" rel="noreferrer">
+        <img src="./images/logo-linkedin.svg" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/ghostops/" target="_blank" rel="noreferrer">
+        <img src="./images/logo-github.svg" alt="GitHub">
+      </a>
+      <a href="#email">
+        <img src="./images/paper-plane-outline.svg" alt="Email">
+      </a>
+    </nav>
 
-	<section class="max50">
-		<h2>About me</h2>
+    <section>
+      <p class="description">
+        Expert React Native developer, Full-stack Software Engineer, life long
+        learner with a growth mindset. I build mobile apps, websites, backend
+        systems, create UX designs, and do some dev-ops.
+      </p>
+    </section>
 
-		<p>
-			I have spent the past {{working_years}} years working with the latest and greatest tech for building
-			native apps, web apps, and back-end infrastructure. I have both on a professional
-			and hobbyist basis worked with tools and concepts such as agile development, continuous
-			integration, and test-driven development.
-		</p>
+    <section class="contact">
+      <a href="#email">
+        Get in touch
+      </a>
+    </section>
+  </main>
 
-		<p>
-			I am a fast learner with a passion for solving problems with code. I am programing
-			language/database agnostic, but I've spent a lot of my time writing JavaScript/TypeScript
-			utilizing React, Node, and Postgres/NoSQL-solutions.
-		</p>
+  <div class="modal">
+    <p class="emailLabel">My email:</p>
+    <i class="email" data-user="ludvig" data-website="ghostops"></i>
+    <p>(no copy-pasting for spam reasons)</p>
+    <a href="#" class="close">Close</a>
+  </div>
 
-		<p>
-			Currently working: <a href="{{company_link}}">{{company}}</a>
-		</p>
-	</section>
+  <script>
+    function showModal() {
+      if (window.location.hash === '#email') {
+        document.querySelector('.modal').classList.add('visible');
+      } else {
+        document.querySelector('.modal').classList.remove('visible');
+      }
+    }
 
-	<section>
-		<h2>Development Skills</h2>
+    addEventListener('hashchange', showModal);
 
-		<p>
-			Some of my development skillset:
-		</p>
-
-		<ul class="skillList">
-			<li>
-				<strong>React:</strong> React, Redux, React Native, Gatsby, Apollo
-			</li>
-			<li>
-				<strong>iOS:</strong> Swift, XCode
-			</li>
-			<li>
-				<strong>Android:</strong> Groovy/Gradle, Java
-			</li>
-			<li>
-				<strong>Backend:</strong> Python (w. Flask), NodeJS (w. Express, GraphQL &amp; gRPC), PHP (Laravel, Craft)
-			</li>
-			<li>
-				<strong>WebDev:</strong> Wordpress, TypeScript &amp; JavaScript, Sass, JQuery, AngularJS, Jekyll, PhoneGap
-			</li>
-			<li>
-				<strong>Database:</strong> Postgres, MySQL, SQLite, DynamoDB
-			</li>
-			<li>
-				<strong>Devops:</strong> Docker, AWS, Kubernetes (kops, eks), Heroku, Netlify, Github Pages
-			</li>
-			<li>
-				<strong>Server Admin:</strong> Ubuntu, Debian, Apache, Nginx, Digital Ocean, etc.
-			</li>
-			<li>
-				<strong>CI:</strong> Jenkins, Circleci, Travis
-			</li>
-			<li>
-				<strong>Testing:</strong> Jasmine, Jest, Cucumber, Enzyme
-			</li>
-			<li>
-				<strong>AWS:</strong> Beanstalk, S3, Cloudfront, Lambda, EC2, ECS, etc.
-			</li>
-			<li>
-				<strong>Build Tools:</strong> Webpack, gulp
-			</li>
-		</ul>
-	</section>
-
-	<section>
-		<h2>Other Skills</h2>
-
-		<ul class="skillList">
-			<li>
-				<strong>Design:</strong> PhotoShop, Illustrator, Sketch
-			</li>
-			<li>
-				<strong>Audio:</strong> Audacity, FL Studio, Co-hosted a local radio show
-			</li>
-			<li>
-				<strong>Video:</strong> Sony Vegas, After Effects
-			</li>
-		</ul>
-	</section>
-
-	<section class="contactArea">
-			<h2>Contact me</h2>
-
-			<p>
-				If you want to get in touch connect with me on <a href="https://www.linkedin.com/in/larsendahl/">LinkedIn</a>
-				or email me at: <i class="email" data-user="ludvig" data-website="ghostops.nu"></i>
-			</p>
-		</section>
-</main>
+    showModal();
+  </script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.95);
+  line-height: 1.6;
+  cursor: default;
+  background: rgb(248,163,0);
+	background: linear-gradient(90deg, rgba(248,163,0,1) 40%, rgba(255,170,0,1) 100%);
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 5%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 40px 80px 0 30px;
+  }
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 48px;
+}
+
+nav a {
+  border: 1px solid rgba(0, 0, 0, 0.95);
+  display: block;
+  height: 50px;
+  width: 50px;
+  padding: 8px;
+  border-radius: 4px;
+  margin-right: 16px;
+  transition: all .3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 768px) {
+  nav a {
+    margin-right: 32px;
+  }
+}
+
+nav a img {
+  height: 100%;
+  width: 100%;
+  margin-right: 16px;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 48px;
+}
+
+.contact {
+  padding-bottom: 60px;
+}
+
+.contact a {
+  border: 1px solid rgba(0, 0, 0, 0.95);
+  display: inline-flex;
+  flex-direction: row;
+  padding: 8px 16px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: rgb(248,163,0);
+  background-color: rgba(0, 0, 0, 0.95);
+  font-weight: 700;
+  transition: all .3s ease;
+}
+
+@media (min-width: 768px) {
+  .contact a {
+    font-size: 2rem;
+    padding: 16px 32px;
+  }
+}
+
+.contact a:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.95);
+}
+
+.contact img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-right: 8px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .85);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.modal.visible {
+  display: flex;
+}
+
+.emailLabel {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .emailLabel {
+    font-size: 2rem;
+  }
+}
+
+.email {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .email {
+    font-size: 3rem;
+  }
+}
+
+.email:before {
+  content: attr(data-user) "\0040" attr(data-website) "\002Enu";
+}
+
+.close {
+  text-decoration: underline;
+  font-size: 1.2rem;
+  margin-top: 32px;
+}
