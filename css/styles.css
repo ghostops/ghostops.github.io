@@ -20,8 +20,7 @@ body {
 
 @media (min-width: 768px) {
   .container {
-    margin: 40px 0 0 30px;
-    padding-right: 80px;
+    padding: 40px 80px 0 30px;
   }
 }
 
@@ -88,7 +87,7 @@ nav a img {
   margin-right: 16px;
 }
 
-p {
+.description {
   font-size: 1.1rem;
   margin-bottom: 48px;
 }
@@ -112,6 +111,13 @@ p {
   transition: all .3s ease;
 }
 
+@media (min-width: 768px) {
+  .contact a {
+    font-size: 2rem;
+    padding: 16px 32px;
+  }
+}
+
 .contact a:hover {
   background-color: transparent;
   color: rgba(0, 0, 0, 0.95);
@@ -122,4 +128,54 @@ p {
   height: 30px;
   display: block;
   margin-right: 8px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .85);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.modal.visible {
+  display: flex;
+}
+
+.emailLabel {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .emailLabel {
+    font-size: 2rem;
+  }
+}
+
+.email {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .email {
+    font-size: 3rem;
+  }
+}
+
+.email:before {
+  content: attr(data-user) "\0040" attr(data-website);
+}
+
+.close {
+  text-decoration: underline;
+  font-size: 1.2rem;
+  margin-top: 32px;
 }

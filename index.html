@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Ludvig Larsendahl</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='icon' href='favicon.png' type='image/png'>
+  <link rel='icon' href='./images/favicon.png' type='image/png'>
 
   <!--General Meta-->
   <meta name="description" content="Expert React Native developer, Full-stack Software Engineer, life long learner with a growth mindset.">
@@ -45,7 +45,7 @@
     </nav>
 
     <section>
-      <p>
+      <p class="description">
         Expert React Native developer, Full-stack Software Engineer, life long
         learner with a growth mindset. I build mobile apps, websites, backend
         systems, create UX designs, and do some dev-ops.
@@ -58,5 +58,26 @@
       </a>
     </section>
   </main>
+
+  <div class="modal">
+    <p class="emailLabel">My email:</p>
+    <i class="email" data-user="ludvig" data-website="ghostops.nu"></i>
+    <p>(no copy-pasting for spam reasons)</p>
+    <a href="#" class="close">Close</a>
+  </div>
+
+  <script>
+    function showModal() {
+      if (window.location.hash === '#email') {
+        document.querySelector('.modal').classList.add('visible');
+      } else {
+        document.querySelector('.modal').classList.remove('visible');
+      }
+    }
+
+    addEventListener('hashchange', showModal);
+
+    showModal();
+  </script>
 </body>
 </html>
