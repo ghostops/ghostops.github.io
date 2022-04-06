@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1000px;
   width: 100%;
   padding: 5%;
 }
@@ -171,7 +171,7 @@ nav a img {
 }
 
 .email:before {
-  content: attr(data-user) "\0040" attr(data-website);
+  content: attr(data-user) "\0040" attr(data-website) "\002Enu";
 }
 
 .close {
